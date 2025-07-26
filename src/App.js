@@ -13,7 +13,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-     axios.post("https://contactform-backend-lf36.onrender.com/api/forms", formData);
+     axios.post("https://contactform-backend-lf36.onrender.com/api/forms ", formData);
       setSuccess('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (err) {
